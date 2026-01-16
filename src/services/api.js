@@ -411,9 +411,10 @@ export const errorHandler = {
   },
 };
 
-export default {
+const api = {
   auth: authAPI,
   agency: agencyAPI,
   client: clientAPI,
   errorHandler,
 };
+export default api;
