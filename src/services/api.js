@@ -36,11 +36,70 @@ const apiRequest = async (endpoint, options = {}) => {
 };
 
 export const getInitialAgencies = () => {
-  return [];
+  return [
+    {
+      id: 1,
+      name: "Agence Paris Centre",
+      address: "123 Rue de Rivoli, 75001 Paris",
+      phone: "01 23 45 67 89",
+      email: "paris@agence.com",
+      manager: "Marie Dupont",
+    },
+    {
+      id: 2,
+      name: "Agence Lyon",
+      address: "45 Cours Lafayette, 69003 Lyon",
+      phone: "04 78 90 12 34",
+      email: "lyon@agence.com",
+      manager: "Pierre Martin",
+    },
+    {
+      id: 3,
+      name: "Agence Marseille",
+      address: "78 La Canebière, 13001 Marseille",
+      phone: "04 91 23 45 67",
+      email: "marseille@agence.com",
+      manager: "Sophie Bernard",
+    },
+  ];
 };
 
 export const getInitialClients = () => {
-  return [];
+  return [
+    {
+      id: 1,
+      name: "Jean Dupont",
+      email: "jean.dupont@email.com",
+      phone: "06 12 34 56 78",
+      agencyId: 1,
+      status: "actif",
+      createdAt: "2024-01-15",
+      address: "15 Rue de la Paix, Paris",
+      notes: "Client VIP",
+    },
+    {
+      id: 2,
+      name: "Marie Martin",
+      email: "marie.martin@email.com",
+      phone: "06 98 76 54 32",
+      agencyId: 1,
+      status: "actif",
+      createdAt: "2024-02-20",
+      address: "28 Avenue des Champs, Paris",
+      notes: "",
+    },
+    {
+      id: 3,
+      name: "Pierre Dubois",
+      email: "pierre.dubois@email.com",
+      phone: "06 45 67 89 01",
+      agencyId: 2,
+      status: "inactif",
+      createdAt: "2024-03-10",
+      address: "12 Place Bellecour, Lyon",
+      notes: "À rappeler",
+    },
+  ];
 };
 
 export const authAPI = {
