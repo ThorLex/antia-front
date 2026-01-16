@@ -415,7 +415,5 @@ export default {
   auth: authAPI,
   agency: agencyAPI,
   client: clientAPI,
-  product: productAPI,
-  file: fileAPI,
   errorHandler,
 };
